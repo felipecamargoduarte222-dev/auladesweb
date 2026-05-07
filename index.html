@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Devolucoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Painel de Devolucoes</h1>
+
+    <p>Total de livros processados: <strong id="totalProcessados">0</strong></p>
+    <p>Livros com multa: <strong id="totalMulta">0</strong></p>
+
+    <hr>
+
+    <label for="inputNome">Nome do Livro:</label>
+    <input type="text" id="inputNome" placeholder="Ex: Dom Casmurro">
+
+    <label for="inputDias">Dias de Atraso:</label>
+    <input type="number" id="inputDias" value="0" min="0">
+
+    <button onclick="adicionarLivro()">Registrar Devolucao</button>
+
+    <hr>
+
+    <h2>Livros devolvidos:</h2>
+    <div id="listaLivros">
+        <p id="mensagemVazia">Nenhum livro registrado ainda.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
